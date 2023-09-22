@@ -20,6 +20,11 @@
           response-type="arraybuffer"
           src="AR_Assets/TianHuXS.glb"
         ></a-asset-item>
+        <a-asset-item
+          id="XieZhi"
+          response-type="arraybuffer"
+          src="AR_Assets/XieZhi.glb"
+        ></a-asset-item>
       </a-assets>
       <a-marker
         type="pattern"
@@ -32,6 +37,14 @@
           rotation="0 0 0"
           position="0 0 0"
           animation-mixer="clip:idle_01-Nine-Tails.001; loop:infinite"
+          timescale="2"
+        ></a-entity>
+        <a-entity
+          gltf-model="#XieZhi"
+          scale="1. 1. 1."
+          rotation="0 0 0"
+          position="0 0 0"
+          animation-mixer="clip:Armature.mixamo.com; loop:infinite"
           timescale="2"
         ></a-entity>
       </a-marker>
