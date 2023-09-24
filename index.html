@@ -4,8 +4,43 @@
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.0.0/dist/aframe-extras.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <style>
+      #loading_indicator {
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         margin: auto;
+         border: 10px solid grey;
+         border-radius: 50%;
+         border-top: 10px solid blue;
+         width: 100px;
+         height: 100px;
+         animation: spinIndicator 1s linear infinite;
+      }
+      @keyframes spinIndicator {
+         100% {
+            transform: rotate(360deg);
+         }
+      }
+   </style>
   </head>
   <body>
+    <div id = "loading_indicator"> </div>
+   <script>
+      document.onreadystatechange = function () {
+         if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.getElementById("loading_indicator").style.visibility = "visible";
+         } else {
+            setTimeout(() => {
+               document.getElementById("loading_indicator").style.display ="none";
+               document.querySelector("body").style.visibility = "visible";
+            }, 4000)
+         }
+      };
+   </script>
     <a-scene
       markers_start
       vr-mode-ui="enabled: false"
