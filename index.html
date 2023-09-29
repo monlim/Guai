@@ -53,12 +53,42 @@
         <a-asset-item
           id="Baize"
           response-type="arraybuffer"
-          src="AR_Assets/TianHuXS.glb"
+          src="AR_Assets/Baize.glb"
         ></a-asset-item>
         <a-asset-item
           id="XieZhi"
           response-type="arraybuffer"
           src="AR_Assets/XieZhi.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="FengHuang"
+          response-type="arraybuffer"
+          src="AR_Assets/FengHuang.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="SuanNi"
+          response-type="arraybuffer"
+          src="AR_Assets/SuanNi.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="JiuYing"
+          response-type="arraybuffer"
+          src="AR_Assets/JiuYing.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="TaoWu"
+          response-type="arraybuffer"
+          src="AR_Assets/TaoWu.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="BiXi"
+          response-type="arraybuffer"
+          src="AR_Assets/BiXi.glb"
+        ></a-asset-item>
+        <a-asset-item
+          id="TianHu"
+          response-type="arraybuffer"
+          src="AR_Assets/TianHu.glb"
         ></a-asset-item>
       </a-assets>
       <a-marker
@@ -67,12 +97,10 @@
         url="AR_Assets/pattern-TianHu.patt"
       >
         <a-entity
-          gltf-model="#Baize"
+          gltf-model="#TianHu"
           scale="1. 1. 1."
           rotation="0 0 0"
           position="0 0 0"
-          animation-mixer="clip:idle_01-Nine-Tails.001; loop:infinite"
-          timescale="2"
         ></a-entity>
       </a-marker>
       <a-marker
@@ -85,8 +113,78 @@
           scale="1. 1. 1."
           rotation="0 0 0"
           position="0 0 0"
-          animation-mixer="clip:Armature|mixamo.com|Layer0; loop:infinite"
-          timescale="2"
+        ></a-entity>
+      </a-marker>
+      <a-marker
+        type="pattern"
+        preset="custom"
+        url="AR_Assets/pattern-BiXi.patt"
+      >
+        <a-entity
+          gltf-model="#BiXi"
+          scale="1. 1. 1."
+          rotation="0 0 0"
+          position="0 0 0"
+        ></a-entity>
+      </a-marker>
+      <a-marker
+        type="pattern"
+        preset="custom"
+        url="AR_Assets/pattern-FengHuang.patt"
+      >
+        <a-entity
+          gltf-model="#FengHuang"
+          scale="1. 1. 1."
+          rotation="0 0 0"
+          position="0 0 0"
+        ></a-entity>
+      </a-marker>
+      <a-marker
+        type="pattern"
+        preset="custom"
+        url="AR_Assets/pattern-SuanNi.patt"
+      >
+        <a-entity
+          gltf-model="#SuanNi"
+          scale="1. 1. 1."
+          rotation="0 0 0"
+          position="0 0 0"
+        ></a-entity>
+      </a-marker>
+      <a-marker
+        type="pattern"
+        preset="custom"
+        url="AR_Assets/pattern-BaiZe.patt"
+      >
+        <a-entity
+          gltf-model="#Baize"
+          scale="1. 1. 1."
+          rotation="0 0 0"
+          position="0 0 0"
+        ></a-entity>
+      </a-marker>
+      <a-marker
+        type="pattern"
+        preset="custom"
+        url="AR_Assets/pattern-JiuYing.patt"
+      >
+        <a-entity
+          gltf-model="#JiuYing"
+          scale="1. 1. 1."
+          rotation="0 0 0"
+          position="0 0 0"
+        ></a-entity>
+      </a-marker>
+      <a-marker
+        type="pattern"
+        preset="custom"
+        url="AR_Assets/pattern-TaoWu.patt"
+      >
+        <a-entity
+          gltf-model="#TaoWu"
+          scale="1. 1. 1."
+          rotation="0 0 0"
+          position="0 0 0"
         ></a-entity>
       </a-marker>
       <a-entity camera> </a-entity>
